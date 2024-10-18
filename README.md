@@ -19,6 +19,7 @@ When you are finished, please upload your completed work to your Github and invi
 ## Setup
 
 - This repo was scaffolded using `create-react-app`. As such, this app requires a stable version of `node` to get up and running.
+
 [[Updated]]
  - If you have nvm, run `nvm use` to use the correct version of node. If not, install the correct version of node (20.18) to continue.
 - Clone this repo and run `npm install`.
