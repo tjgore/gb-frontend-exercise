@@ -56,6 +56,7 @@ Please take some time to answer the following questions. Your answers should go 
   - Save the initial `fetchAllPokemon` API call data to local storage for a few days to prevent a request on the app's initial render. Pokemon data is small and unlikely to change often, so this will save a few API calls.
   - Add react query and use its caching functionality to prefetch and store response data for `fetchPokemonSpeciesByName`, `fetchPokemonDetailsByName`, and `fetchEvolutionChainById` under the same key. This will reduce the number of API calls for Pokemon details that are viewed often.
   - Break out the Pokemon list and card details into separate components and use react hook `useCallback` and `memo` to prevent rerendering the Pokemon list 151 times when clicking the "Get details" buttons for a Pokemon. This improvement will cause only the list item for the clicked button to rerender rather than the entire list.
+  - Add lodash debounce to the search input to prevent filtering each time a character is typed. I doubt this will make a difference, but it's a good practice.
 
 - Is there anything you would consider doing if we were to go live with this app?
 
